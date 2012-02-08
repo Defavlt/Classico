@@ -1,0 +1,37 @@
+meta * {
+	display: none;
+	visibility: hidden;
+}
+
+img {
+	display: none;
+	visibility: hidden;
+}
+
+#contact,
+header nav.tjänster a {
+	display: none;
+	visibility: hidden;
+}
+
+ * * {
+	display: block;
+	width: auto;
+}
+
+header nav a {
+	display: inline;
+}
+
+footer {
+	display: inline-block;
+	width: 100%;
+	background: #191919;
+	margin-top: 15px;
+	padding-left: 15px;
+	color: #fff;
+}
+
+footer a {
+	color: #fff;
+}
