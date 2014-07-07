@@ -1,13 +1,13 @@
 # GENERATION
 source: "./src/"
 destination: ".site/"
-url: "http://localhost:4000"
+url: "http://defav.lt/Classico"
+# url: "http://defavlt.github.io/Classico"
 
 # SITE
 email: marcus.hansson@email.com
 github: github.com/defavlt
 name: "Classico"
-url: "http://defavlt.github.io/Classico"
 paginate: 5
 markdown: rdiscount
 permalink: /:title/
