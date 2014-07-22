@@ -56,7 +56,7 @@ function OnContactCloseClick(event) {
     event.stopPropagation();
 
     var ele_contact = $('#contact');
-    var btn_open = $('nav a[href="/kontakt"]');
+    var btn_open = $('nav a[href$="/kontakt/"]');
 
     function Enable() {
         ele_contact.slideDown("medium");
@@ -78,7 +78,7 @@ function OnContactOpenClick(event) {
         event.preventDefault();
 
         var ele_contact = $("#contact");
-        var btn_open = $('nav a[href="/kontakt/"]');
+        var btn_open = $('nav a[href$="/kontakt/"]');
 
         function Enable() {
             ele_contact.slideDown("medium");
@@ -148,10 +148,10 @@ function OnSLNavMouseHoover(event) {
 
 function OnKeyPress(event) {
     
-    var btn_open = $('nav a[href="/kontakt/"]');
-    var btn_home = $('nav a[href="/index/"]');
-    var btn_serv = $('nav a[href="/tjänster/"]')
-    var btn_busi = $('nav a[href="/foretaget/"]');
+    var btn_open = $('nav a[href$="/kontakt/"]');
+    var btn_home = $('nav a[href$="/index/"]');
+    var btn_serv = $('nav a[href$="/tjanster/"]')
+    var btn_busi = $('nav a[href$="/foretaget/"]');
     
     switch (event.which) {
         
@@ -189,7 +189,7 @@ $(document).ready(function() {
 function RegisterEvents() {
 
     var btn_close = $('a[href="#close"]');
-    var btn_open = $('nav a[href="/kontakt/"]');
+    var btn_open = $('nav a[href$="/kontakt/"]');
     var btn_nav_a = $('nav a');
     var btn_sl_a = $("div#slideshow-navigation a");
 
@@ -208,44 +208,6 @@ function RegisterEvents() {
         
         $(btn_sl_a[i]).bind("hover", OnSLNavMouseHoover);
     }
-    
-    RegisterEvents.previous = "";
-    RegisterEvents.current = "";
-    setInterval(function() {
-
-        if (RegisterEvents.current == "" ||
-            RegisterEvents.current.length == 0 ||
-            typeof RegisterEvents.current == "undefined" ||
-            typeof RegisterEvents.current == "string") {
-                
-                RegisterEvents.current = $("div#slideshow-navigation a").first();
-                RegisterEvents.previous = $("div#slideshow-navigation a").last();
-            }
-            
-        if (RegisterEvents.previous == "" ||
-            typeof RegisterEvents.previous == "undefined" ||
-            typeof RegisterEvents.previous == "string") {
-                
-                RegisterEvents.previous = $("div#slideshow-navigation a").first();
-            }
-
-
-        RegisterEvents.current.animate({
-            backgroundColor: "#6b6c6a"
-        },
-            400
-        );
-
-        RegisterEvents.previous.animate({
-            backgroundColor: "#dedede"
-        },
-            400
-        );
-
-        RegisterEvents.previous = RegisterEvents.current;
-        RegisterEvents.current = RegisterEvents.current.next();
-
-    }, 3200);
 }
 
 function VARS() {
