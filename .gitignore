@@ -1,5 +1,8 @@
-.site/
-.site/**/*
+_site/
+_site/**/*
+
+.sass-cache
+.sass-cache/**/*
 
 .tmp/
 .tmp/**/*
