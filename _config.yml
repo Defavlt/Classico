@@ -1,5 +1,3 @@
 # GENERATION
-source : "./src/"
-destination : ".site/"
 url: "http://localhost:4000"
 permalink: "/:title/"
