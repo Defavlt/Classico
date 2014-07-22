@@ -6,13 +6,13 @@
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <link  href="css/style.css" type="text/css" rel="stylesheet" media="screen" />
-        <link  href="css/handset.css" type="text/css" rel="stylesheet" media="handheld" />
+        <link  href="{{ site.url }}/css/style.css" type="text/css" rel="stylesheet" media="screen" />
+        <link  href="{{ site.url }}/css/handset.css" type="text/css" rel="stylesheet" media="handheld" />
         <script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
         <script src="http://plugins.jquery.com/files/jquery.color.js.txt" type="text/javascript"></script>
         <!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
         <!--<script src="resources/scripts/map.js"></script>-->
-        <script src="js/scripts.js" type="text/javascript"></script>
+        <script src="{{ site.url }}/js/scripts.js" type="text/javascript"></script>
     </head
     <body>
         <aside id="contact">
@@ -34,7 +34,7 @@
                     <h2 class="descr"><a>Intresserad av att arbeta hos oss?</a></h2>
                     <h2 class="email"><a href="mailto:jobb@k2c.se">jobb@k2c.se</a></h2>
                     <h2 class="descr"><a>Något specifikt du vill ha tag i?</a></h2>
-                    <h2 class="email"><a href="/kontakt/">Fler kontaktuppgifter &raquo;</a></h2>
+                    <h2 class="email"><a href="{{ site.url }}/kontakt/">Fler kontaktuppgifter &raquo;</a></h2>
                 </div>
                 <div class="center">
                     <a href="#close" title="Close"><img src="images/cross-contact_close_button-20x20.png" /></a>
@@ -44,10 +44,10 @@
         <header>
             <div class="container">
                 <nav>
-                    <a href="/kontakt/">Contact</a>
-                    <a href="/tjänster/">tjänster</a>
-                    <a href="/foretaget/">företaget</a>
-                    <a href="/">Hem</a>
+                    <a href="{{ site.url }}/kontakt/">Contact</a>
+                    <a href="{{ site.url }}/tjänster/">tjänster</a>
+                    <a href="{{ site.url }}/foretaget/">företaget</a>
+                    <a href="{{ site.url }}/">Hem</a>
                     <img src="images/logo-black_text-192x69.png" />
                 </nav>
             </div>
